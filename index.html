@@ -367,14 +367,14 @@
     </div>
 
     <div class="tools-grid">
-      <!-- ChatGPT Read Aloud -->
+      <!-- Gemini Read Aloud -->
       <div class="tool-card" data-category="reading">
         <div class="tool-header reading">
-          <div class="tool-name">ChatGPT Voice / Read Aloud</div>
+          <div class="tool-name">Gemini for Reading Support</div>
           <div class="tool-category">Reading Support</div>
         </div>
         <div class="tool-body">
-          <p class="tool-description">ChatGPT can read PDFs, documents, and text aloud to students. Upload a document and ask it to read word-for-word, summarize, or read specific sections.</p>
+          <p class="tool-description">Upload PDFs or paste text into Gemini to create audio versions, summaries, or simplified readings for your students. Generate materials they can access independently.</p>
           <div class="tool-section">
             <div class="tool-section-title">Best For</div>
             <div class="use-cases">
@@ -387,13 +387,14 @@
             <div class="tool-section-title">How to Use</div>
             <div class="prompt-example">
 Upload your PDF or paste text, then ask:
-"Please read this document aloud, 
-section by section. Pause after 
-each paragraph so I can follow along."
+"Create a simplified summary of this 
+reading at an 8th grade level. Include
+the 5 key vocabulary terms students 
+need to know."
               <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
             </div>
           </div>
-          <a href="https://chat.openai.com" target="_blank" class="tool-link">→ Open ChatGPT</a>
+          <a href="https://gemini.google.com" target="_blank" class="tool-link">→ Open Gemini</a>
         </div>
       </div>
 
@@ -435,7 +436,7 @@ simpler language. Bold the key terms."
           <div class="tool-category">Comprehension</div>
         </div>
         <div class="tool-body">
-          <p class="tool-description">Google's NotebookLM can ingest multiple sources and generate study guides, summaries, and even audio overviews. Students can ask questions about uploaded materials.</p>
+          <p class="tool-description">Upload your unit materials to NotebookLM and generate study guides, summaries, and audio overviews to share with students. Great for creating differentiated review materials quickly.</p>
           <div class="tool-section">
             <div class="tool-section-title">Best For</div>
             <div class="use-cases">
@@ -497,7 +498,7 @@ Teach students to say punctuation:
           <div class="tool-category">Writing Support</div>
         </div>
         <div class="tool-body">
-          <p class="tool-description">AI-powered transcription that works in real-time. Students can record lectures, discussions, or their own thoughts and get instant transcripts with speaker identification.</p>
+          <p class="tool-description">AI-powered transcription that works in real-time. Great for transcribing student verbal responses or creating text versions of recorded content.</p>
           <div class="tool-section">
             <div class="tool-section-title">Best For</div>
             <div class="use-cases">
@@ -510,14 +511,45 @@ Teach students to say punctuation:
             <div class="tool-section-title">How to Use</div>
             <div class="prompt-example">
 Free tier: 300 minutes/month
-Students can record class discussions
-or dictate observations during labs.
+Record verbal responses from students
+or transcribe class discussions.
 Transcripts are searchable and 
 shareable.
               <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
             </div>
           </div>
           <a href="https://otter.ai" target="_blank" class="tool-link">→ Open Otter.ai</a>
+        </div>
+      </div>
+
+      <!-- Rev.com -->
+      <div class="tool-card" data-category="writing">
+        <div class="tool-header writing">
+          <div class="tool-name">Rev.com</div>
+          <div class="tool-category">Writing Support</div>
+        </div>
+        <div class="tool-body">
+          <p class="tool-description">Free AI transcription with a generous free tier. Upload audio or video files and get accurate transcripts. Great for converting verbal student responses to text for assessment.</p>
+          <div class="tool-section">
+            <div class="tool-section-title">Best For</div>
+            <div class="use-cases">
+              <span class="use-case-tag">Verbal assessments</span>
+              <span class="use-case-tag">Interview transcripts</span>
+              <span class="use-case-tag">Recording conversion</span>
+            </div>
+          </div>
+          <div class="tool-section">
+            <div class="tool-section-title">How to Use</div>
+            <div class="prompt-example">
+Free AI transcription:
+1. Go to rev.com/transcription
+2. Upload audio/video file
+3. Get transcript in minutes
+4. Download as text, Word, or SRT
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+          <a href="https://www.rev.com/transcription" target="_blank" class="tool-link">→ Open Rev.com</a>
         </div>
       </div>
 
@@ -580,39 +612,6 @@ Install Chrome extension, then:
             </div>
           </div>
           <a href="https://www.naturalreaders.com" target="_blank" class="tool-link">→ Open NaturalReader</a>
-        </div>
-      </div>
-
-      <!-- Immersive Reader -->
-      <div class="tool-card" data-category="accessibility">
-        <div class="tool-header accessibility">
-          <div class="tool-name">Microsoft Immersive Reader</div>
-          <div class="tool-category">Accessibility</div>
-        </div>
-        <div class="tool-body">
-          <p class="tool-description">Built into Microsoft Office, Edge, and OneNote. Offers text-to-speech, syllable breakdown, line focus, picture dictionary, and translation—all in one tool.</p>
-          <div class="tool-section">
-            <div class="tool-section-title">Best For</div>
-            <div class="use-cases">
-              <span class="use-case-tag">Dyslexia</span>
-              <span class="use-case-tag">ELL students</span>
-              <span class="use-case-tag">Focus issues</span>
-            </div>
-          </div>
-          <div class="tool-section">
-            <div class="tool-section-title">How to Use</div>
-            <div class="prompt-example">
-In Word/OneNote: View → Immersive Reader
-
-Features to try:
-• Line Focus (1, 3, or 5 lines)
-• Syllables toggle
-• Parts of speech highlighting
-• Read aloud with word tracking
-              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-            </div>
-          </div>
-          <a href="https://education.microsoft.com/en-us/resource/9b010288" target="_blank" class="tool-link">→ Learn More</a>
         </div>
       </div>
 
@@ -683,11 +682,11 @@ Paste your unit content, then:
       <!-- AI Calendar Builder -->
       <div class="tool-card" data-category="organization">
         <div class="tool-header organization">
-          <div class="tool-name">AI Calendar / Task Breakdown</div>
+          <div class="tool-name">AI Project Breakdown Generator</div>
           <div class="tool-category">Organization</div>
         </div>
         <div class="tool-body">
-          <p class="tool-description">Use AI to help students break large projects into manageable daily tasks with specific deadlines. Especially helpful for students with executive function challenges.</p>
+          <p class="tool-description">Use Gemini to create detailed project timelines and task breakdowns to share with students. Especially helpful for supporting students with executive function challenges.</p>
           <div class="tool-section">
             <div class="tool-section-title">Best For</div>
             <div class="use-cases">
@@ -699,12 +698,12 @@ Paste your unit content, then:
           <div class="tool-section">
             <div class="tool-section-title">How to Use</div>
             <div class="prompt-example">
-"My research paper is due March 15.
-Break this into daily tasks starting
-today. Each task should take 20-30
-minutes max. Include specific actions
-like 'find 2 sources about X' not
-just 'do research.'"
+"The research paper is due March 15.
+Create a student-friendly checklist
+breaking this into daily tasks. Each
+task should take 20-30 min max. Use
+specific actions like 'find 2 sources
+about X' not just 'do research.'"
               <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
             </div>
           </div>
@@ -719,7 +718,7 @@ just 'do research.'"
           <div class="tool-category">Writing Support</div>
         </div>
         <div class="tool-body">
-          <p class="tool-description">Video response platform that lets students demonstrate understanding verbally instead of in writing. Great alternative assessment for students who struggle with written expression.</p>
+          <p class="tool-description">Video response platform where students demonstrate understanding verbally instead of in writing. Great alternative assessment for students who struggle with written expression.</p>
           <div class="tool-section">
             <div class="tool-section-title">Best For</div>
             <div class="use-cases">
@@ -742,6 +741,37 @@ matter."
           <a href="https://info.flip.com" target="_blank" class="tool-link">→ Open Flip</a>
         </div>
       </div>
+
+      <!-- Snorkl -->
+      <div class="tool-card" data-category="writing">
+        <div class="tool-header writing">
+          <div class="tool-name">Snorkl</div>
+          <div class="tool-category">Writing Support</div>
+        </div>
+        <div class="tool-body">
+          <p class="tool-description">Video-based assessment tool where students explain their thinking verbally while showing their work. Perfect for math, science, or any subject where you want to hear student reasoning—not just see a final answer.</p>
+          <div class="tool-section">
+            <div class="tool-section-title">Best For</div>
+            <div class="use-cases">
+              <span class="use-case-tag">Math explanations</span>
+              <span class="use-case-tag">Show your work</span>
+              <span class="use-case-tag">Process assessment</span>
+            </div>
+          </div>
+          <div class="tool-section">
+            <div class="tool-section-title">How to Use</div>
+            <div class="prompt-example">
+Instead of "show your work" on paper:
+Have students record themselves solving
+a problem while explaining each step
+aloud. You assess their thinking, not
+just their writing.
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+          <a href="https://www.snorkl.app" target="_blank" class="tool-link">→ Open Snorkl</a>
+        </div>
+      </div>
     </div>
 
     <div class="section-divider">
@@ -751,8 +781,8 @@ matter."
 
     <div class="quick-wins">
       <div class="quick-win-card">
-        <h4>🎧 Tell students about ChatGPT read-aloud</h4>
-        <p>Students can upload any PDF and ask ChatGPT to read it to them. This one tip can help struggling readers access your content immediately.</p>
+        <h4>🎧 Use Gemini to create audio-friendly content</h4>
+        <p>Paste a reading into Gemini and ask for a simplified summary. Share that version with struggling readers alongside the original.</p>
       </div>
       <div class="quick-win-card">
         <h4>🎤 Normalize voice typing</h4>
